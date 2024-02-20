@@ -1,0 +1,640 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 10%;
+
+}
+
+#logobtn {
+    color: white;
+    background-color: rgb(112, 98, 235);
+    border: none;
+    text-align: center;
+    width: 85px;
+    height: 30px;
+}
+
+.logout {
+    width: 10%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#logoutbtn {
+    color: rgb(220, 84, 84);
+    border: none;
+    float: right;
+    width: auto;
+    background-color: white;
+}
+
+.logouticon {
+    color: rgb(220, 84, 84);
+    float: right;
+    cursor: pointer;
+    border-left-style: groove;
+    border-left-color: rgb(98, 99, 99);
+    border-left-width: 1px;
+    padding-left: 3px;
+}
+
+#logoutbtn:hover {
+    background-color: rgb(220, 84, 84);
+    color: white;
+}
+
+.s-bar {
+    width: 200px;
+    height: 20px;
+    background-color: rgb(247, 243, 243);
+    border-color: white;
+    float: right;
+}
+
+.openBtn {
+    display: none;
+}
+
+.mobilenav {
+    display: none;
+}
+
+.navibar {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    padding-top: 11px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+.navibar div {
+    width: 50%;
+}
+
+.symbols {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.symbols div {
+    width: 20%;
+}
+
+.bi-person-circle {
+    cursor: pointer;
+    float: right;
+    fill: rgb(112, 98, 235);
+}
+
+.bi-person-circle:hover {
+    fill: rgb(112, 98, 210);
+}
+
+.bi-bell-fill {
+    cursor: pointer;
+    float: right;
+    fill: rgb(112, 98, 235);
+}
+
+.bi-bell-fill:hover {
+    fill: rgb(112, 98, 210);
+}
+
+.bi-plus-circle-fill {
+    cursor: pointer;
+    float: right;
+    fill: rgb(112, 98, 235);
+}
+
+.bi-plus-circle-fill:hover {
+    fill: rgb(112, 98, 210);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    height: 1500px;
+
+}
+
+.workspace {
+    flex-basis: 85%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #fdfbfb;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(112, 98, 235);
+    color: white;
+}
+
+.workspace {
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profilebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.profilebar svg {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.req {
+    /*display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;*/
+    flex-basis: 100%;
+}
+
+
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    width: 90%;
+    height: 500px;
+    flex-basis: 60%;
+}
+
+
+.aibox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#box{
+    width: 90%;
+    margin-top: 50px;
+}
+
+#ai-box {
+    box-shadow: 0 2px 4px 0 rgba(90, 89, 89, 0.2), 0 2px 4px 0 rgba(90, 89, 89, 0.2);
+    width: 100%;
+    height: 500px;
+    border-radius: 25px;
+    border: 2px solid rgb(112, 98, 235);
+    resize: none;
+    font-size: larger;
+}
+
+textarea#ai-box {
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.word-btn button{
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    background: rgb(112, 98, 235);
+    color: white;
+    cursor: pointer;
+}
+
+.word-btn button:hover{
+    background: rgb(112, 98, 210);
+}
+
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+
+.openBtn {
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+.openBtn:hover {
+    background: #bbb;
+}
+
+.overlaysearch {
+    height: 50%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlaysearch-content {
+    position: relative;
+    top: 46%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.overlaysearch .closebtn {
+    position: absolute;
+    right: 10px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.overlaysearch .closebtn:hover {
+    color: #ccc;
+}
+
+.overlaysearch input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 100%;
+    height: 1px;
+    background: white;
+}
+
+.overlaysearch input[type=text]:hover {
+    background: #f1f1f1;
+}
+
+.overlaysearch button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlaysearch button:hover {
+    background: #bbb;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1370px) {
+    html {
+        font-size: 0.75rem;
+    }
+
+    #text-box{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1201px) {
+
+    .workspace {
+        flex-basis: 81%;
+    }
+
+    html {
+        font-size: 0.85rem;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #text-box {
+        width: 400px;
+    }
+
+    .btn-grp button {
+        position: relative;
+        left: 8px;
+    }
+
+    .btn-grp{
+        width: 39%;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    html {
+        font-size: 0.65rem;
+    }
+
+    ul svg {
+        width: 10%;
+        height: 10%;
+    }
+
+    .textarea {
+        width: 70%;
+    }
+
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    header svg {
+        width: 30%;
+    }
+
+    .logouticon div {
+        float: right;
+    }
+
+    .logouticon {
+        padding-left: 1px;
+    }
+
+    .logouticon svg {
+        width: 75%;
+    }
+
+    #logoutbtn {
+        height: 50%;
+    }
+
+    .logout {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    button#logobtn {
+        width: 50px;
+        height: 30px;
+    }
+
+    /*.top{
+        display: flex;
+        flex-direction: column;
+    }*/
+
+    .input-box {
+        width: 60%;
+    }
+
+    #text-box {
+        width: 280px;
+        height: 260px;
+    }
+
+    .edit{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .side-nav ul {
+        display: none;
+    }
+
+    .workspace {
+        flex-basis: 92%;
+    }
+
+    .mobilenav {
+        display: contents;
+    }
+
+    .s-bar {
+        width: 125px;
+    }
+
+    header svg {
+        width: 40%;
+    }
+
+    .input-box {
+        width: 52%;
+    }
+
+    #text-box {
+        width: 250px;
+    }
+
+    
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .side-nav ul {
+        display: none;
+    }
+
+    .workspace {
+        flex-basis: 92%;
+    }
+
+    .mobilenav {
+        display: contents;
+    }
+
+    .s-bar {
+        display: none;
+    }
+
+    header svg {
+        width: 40%;
+    }
+
+    .overlaysearch {
+        display: block;
+    }
+
+    .openBtn {
+        display: block;
+    }
+
+    .navibar {
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .logout {
+        width: 25%;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    button#logobtn {
+        width: 55px;
+    }
+
+    .navibar.search {
+        width: 25%;
+    }
+
+    .navibar.symbols {
+        width: 75%;
+    }
+
+    .symbols svg {
+        width: 75%;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .select {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #text-box {
+        width: 300px;
+    }
+
+    div.input-box{
+        height: 500px;
+    }
+    
+
+    #response-box {
+        width: 75%;
+    }
+
+    .btn-grp button {
+        position: relative;
+        left: 5px;
+    }
+
+    .btn-grp{
+        position: relative;
+        top: -185px;
+        left: -95px;
+    }
+    .edit{
+        font-size: smaller;
+    }
+}
+
+
+@media only screen and (max-width:451px) {
+
+    button#logobtn {
+        height: 25px;
+    }
+
+    .navibar.symbols {
+        width: 100%;
+    }
+
+    .symbols div {
+        width: 30%;
+    }
+
+    .symbols {
+        justify-content: flex-start;
+    }
+
+    #text-box {
+        width: 200px;
+    }
+
+    .btn-grp {
+        width: 50%;
+        position: relative;
+        left: -55px;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
