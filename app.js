@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const openai = new OpenAI({
-    apiKey: process.env.OPEN_AI_KEY,
+    apiKey: "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",
 });
 
 
